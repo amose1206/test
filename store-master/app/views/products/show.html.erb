@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="container-fluid">
+       <div class="row">
+          <img src="<%= @product.picture %>" class="img-responsive" />
+       </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1><%= @product.title %></h1>
+        <p>
+          <%= @product.description %>
+        </p>
+  
+        <!-- <h2><%= number_to_currency(@product.price) %></h2> -->
+        <hr />
+        <%= render :template => "charges/new" %> 
+  
+      </div>
+    </div>
+  </div>
+<br>
